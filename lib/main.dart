@@ -1,6 +1,12 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: await_only_futures
 
-void main() {
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+Future<void> main() async {
+  // Step 01
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp;
   runApp(const MyApp());
 }
 

@@ -6,7 +6,7 @@ This project covers, both Anddroid & iOS setup of the flutter-google sign in.
 
 Following is the step by step workthrough of this project.
 
-- create a firebase project
+- Create a firebase project
 - Goto: firebase console > Authentication > Google > Enable 
 
 ### Setup android app
@@ -22,12 +22,17 @@ Following is the step by step workthrough of this project.
 ### Setup iOS app
 - step
 
+### Coding part
+- 01: import firebase core and initialize firebase in 'main.dart' 
+- 02: 
+
 ### Dependencies
 - [add 'firebase_auth' package](https://pub.dev/packages/firebase_auth) 
 - [add 'google_sign_in' package](https://pub.dev/packages/google_sign_in)
-- flutter pub add firebase_auth
-- flutter pub add google_sign_in
+- [font awosome for google icon](https://pub.dev/packages/font_awesome_flutter)
+- [provider package for state management](https://pub.dev/packages/provider)
 
+### References
 - [Reference: youtube.com/Johannes Milke](https://www.youtube.com/watch?v=1k-gITZA9CI&t=2s)
 - [Reference: youtube.com/CodeX](url)
 
