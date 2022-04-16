@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'google_sign_in_provider.dart';
 
 class LoggedInScreen extends StatelessWidget {
   const LoggedInScreen({Key? key}) : super(key: key);
@@ -20,7 +23,11 @@ class LoggedInScreen extends StatelessWidget {
           Padding(
               padding: const EdgeInsets.only(right: 20.0),
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  final provider =
+                      Provider.of<GoogleSignInProvider>(context, listen: false);
+                  provider.logout();
+                },
                 child: const Icon(
                   Icons.logout,
                   size: 26.0,
