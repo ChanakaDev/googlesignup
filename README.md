@@ -129,7 +129,7 @@ Reference: https://stackoverflow.com/questions/63492211/no-firebase-app-default-
 ### Screen Shots
 <table>
     <tr>
-        <td> <img src="./assets/sign_in.png" alt="text" width="200"/> </td>
-        <td> <img src="./assets/logged_in.png" alt="text" width="200"/> </td>
+        <td> <img src="./assets/images/sign_in.png" alt="text" width="200"/> </td>
+        <td> <img src="./assets/images/logged_in.png" alt="text" width="200"/> </td>
     </tr>
 </table>
