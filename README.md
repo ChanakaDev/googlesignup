@@ -43,6 +43,8 @@ Following is the step by step workthrough of this project.
 </array>
 `
 
+Reference of the above code: https://pub.dev/packages/google_sign_in
+
 - Then copy 
 
 `
