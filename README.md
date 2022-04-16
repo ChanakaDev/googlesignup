@@ -112,8 +112,8 @@ Restarted application in 497ms.
 Add 'firebase_core' package to the project
 Reference: https://stackoverflow.com/questions/63492211/no-firebase-app-default-has-been-created-call-firebase-initializeapp-in
 
-- 08: 
-- 09: 
+- 08: Important *remember to add page navigator in 'main.dart'*  
+- 09: Implement 'logged screen', how user should see the app after logged in
 
 ### Dependencies
 - [add 'firebase_auth' package](https://pub.dev/packages/firebase_auth) 
