@@ -92,7 +92,11 @@ from 'iOS > Runner > GoogleService-Info.plist' and put it inside 'iOS > Runner >
 </table>
 
 - 01: import firebase core and initialize firebase in 'main.dart' 
-- 02: 
+- 02: implement a UI with login button
+- 03: setup 'google sign in provider' file
+- 04: update 'main.dart' with 'provider'
+- 05: update 'onpressed' event of google sign in button
+- 06: 
 
 ### Dependencies
 - [add 'firebase_auth' package](https://pub.dev/packages/firebase_auth) 

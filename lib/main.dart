@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:googlesignup/google_sign_in_provider.dart';
+import 'package:googlesignup/sign_in_screen.dart';
+import 'package:provider/provider.dart';
 
 Future<void> main() async {
   // Step 01
@@ -15,29 +18,15 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, // remove debug bannar
-      title: 'Flutter Google Sign in',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("Googe sign in"),
-      ),
-      body: Container(),
-    );
-  }
+  Widget build(BuildContext context) => ChangeNotifierProvider(
+        create: (context) => GoogleSignInProvider(),
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false, // remove debug bannar
+          title: 'Flutter Google Sign in',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          home: const SignInScreen(),
+        ),
+      );
 }
