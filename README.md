@@ -96,11 +96,29 @@ from 'iOS > Runner > GoogleService-Info.plist' and put it inside 'iOS > Runner >
 - 03: setup 'google sign in provider' file
 - 04: update 'main.dart' with 'provider'
 - 05: update 'onpressed' event of google sign in button
-- 06: 
+- 06: setup 'page_navigator.dart' page
+
+- 07: if you are facing this kind of error:
+
+`
+Restarted application in 497ms.
+[VERBOSE-2:ui_dart_state.cc(209)] Unhandled Exception: [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
+#0      MethodChannelFirebase.app (package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart:159:5)
+#1      Firebase.app (package:firebase_core/src/firebase.dart:53:41)
+#2      FirebaseAuth.instance (package:firebase_auth/src/firebase_auth.dart:38:47)
+#3      GoogleSignInProvider.googleLogin (package:googlesignup/google_sign_in_provider.dart:24:24)
+`
+
+Add 'firebase_core' package to the project
+Reference: https://stackoverflow.com/questions/63492211/no-firebase-app-default-has-been-created-call-firebase-initializeapp-in
+
+- 08: 
+- 09: 
 
 ### Dependencies
 - [add 'firebase_auth' package](https://pub.dev/packages/firebase_auth) 
 - [add 'google_sign_in' package](https://pub.dev/packages/google_sign_in)
+- [add 'firebase_core' package](https://pub.dev/packages/firebase_core)
 - [font awosome for google icon](https://pub.dev/packages/font_awesome_flutter)
 - [provider package for state management](https://pub.dev/packages/provider)
 

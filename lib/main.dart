@@ -1,15 +1,14 @@
-// ignore_for_file: await_only_futures
-
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:googlesignup/google_sign_in_provider.dart';
-import 'package:googlesignup/sign_in_screen.dart';
+import 'package:googlesignup/page_navigator.dart';
 import 'package:provider/provider.dart';
 
-Future<void> main() async {
-  // Step 01
+import 'google_sign_in_provider.dart';
+import 'sign_in_screen.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp;
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const SignInScreen(),
+          home: const PageNavigator(),
         ),
       );
 }
