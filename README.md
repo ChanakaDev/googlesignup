@@ -115,6 +115,13 @@ Reference: https://stackoverflow.com/questions/63492211/no-firebase-app-default-
 - 08: Important *remember to add page navigator in 'main.dart'*  
 - 09: Implement 'logged screen', how user should see the app after logged in
 
+### Google Sign in - in Production
+- to work this google sign in, in production mode
+	- go to the 'Google Play Console > Setup > App integrity'
+	- copy SHA-1 and Sha-256 
+	- put them inside the firebase project as 'finger prints'
+
+
 ### Dependencies
 - [add 'firebase_auth' package](https://pub.dev/packages/firebase_auth) 
 - [add 'google_sign_in' package](https://pub.dev/packages/google_sign_in)
