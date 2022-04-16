@@ -20,7 +20,43 @@ Following is the step by step workthrough of this project.
 - Then add your SHA keys to the firebase project [Setting up SHA Keys](https://developers.google.com/android/guides/client-auth)         
 
 ### Setup iOS app
-- step
+- Open 'ios' folder in XCode, click with 'control' button and select 'Open in XCode'
+- Goto: firebase console > project settings > iOS 
+- Give 'bundle id', you can find this in XCode >  Runner > General > Bundle identifier
+- click 'register' app
+- Download and put 'GoogleService-Info.plist' inside 'XCode > iOS > Runner', in that time select 'copy items if needed', 'Create folder references' and 'Runner' file as the target and select finish
+- Then delete downloaded file from your download folder to avoid 'GoogleService-Info.plist' file reference errors  
+- Then 'Continue to console' in firebase console and close 'XCode'
+- Then add following code inside 'iOS > Runner > Info.plist'
+
+`
+<!-- Put me in the [my_project]/ios/Runner/Info.plist file -->
+<!-- Google Sign-in Section -->
+<key>CFBundleURLTypes</key>
+<array>
+	<dict>
+		<key>CFBundleTypeRole</key>
+		<string>Editor</string>
+		<key>CFBundleURLSchemes</key>
+		<array>
+			<!-- TODO Replace this value: -->
+			<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
+			<string>com.googleusercontent.apps.861823949799-vc35cprkp249096uujjn0vvnmcvjppkn</string>
+		</array>
+	</dict>
+</array>
+<!-- End of the Google Sign-in Section -->
+`
+
+- Then copy 
+
+`
+<key>REVERSED_CLIENT_ID</key>
+<string>com.googleusercontent.apps.1083940679426-u5cpu445vnig89p67suutlarkcfjp1ap</string>
+`
+
+from 'iOS > Runner > GoogleService-Info.plist' and put it inside 'iOS > Runner > Info.plist'
+
 
 ### Coding part
 - 01: import firebase core and initialize firebase in 'main.dart' 
