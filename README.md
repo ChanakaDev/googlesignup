@@ -56,6 +56,41 @@ from 'iOS > Runner > GoogleService-Info.plist' and put it inside 'iOS > Runner >
 
 
 ### Coding part
+- 01: if you have problems in running project try following commands
+
+<table>
+	<tr>
+    	<td>rm ios/Podfile</td>
+  	</tr>
+  	<tr>
+    	<td>flutter pub upgrade</td>
+  	</tr>
+    <tr>
+    	<td>flutter pub run</td>
+  	</tr>
+    <tr>
+    	<td>cd ios</td>
+  	</tr>
+    <tr>
+    	<td>pod init</td>
+  	</tr>
+	<tr>
+    	<td>// pod update (fail)</td>
+  	</tr>
+    <tr>
+    	<td>sudo arch -x86_64 gem install ffi</td>
+  	</tr>
+	<tr>
+    	<td>arch -x86_64 pod install</td>
+  	</tr>
+	<tr>
+    	<td>flutter clean</td>
+  	</tr>
+	<tr>
+    	<td>// run the project</td>
+  	</tr>
+</table>
+
 - 01: import firebase core and initialize firebase in 'main.dart' 
 - 02: 
 
